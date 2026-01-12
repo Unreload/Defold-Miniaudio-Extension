@@ -4,4 +4,4 @@
 [English Version](./extension_miniaudio/README(EN).md)
 [한국어 버전](./extension_miniaudio/README(KO).md)
 
-#　Not all Miniaudio features are covered/tested.
+**This extension currently covers a subset of Miniaudio features and is tested on limited scenarios.**
