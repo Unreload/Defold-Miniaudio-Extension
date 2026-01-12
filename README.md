@@ -1,0 +1,2 @@
+# Defold-Miniaudio-Extension
+**Defold Miniaudio Extension** is a high-performance audio solution for the Defold engine. It is built on top of the [**miniaudio**](https://miniaud.io) library and adopts a **memory-based streaming approach using `sys.load_resource`**, which completely resolves file path issues that often occur after bundling.
