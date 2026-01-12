@@ -3,14 +3,14 @@
 [English Version](./README(EN).md)
 
 **Defold Miniaudio Extension**은 Defold 엔진을 위한 고성능 오디오 솔루션입니다.
-[**miniaudio**](https://miniaud.io) 라이브러리를 기반으로 하며, `sys.load_resource`를 활용한 **메모리 기반 재생 방식**을 사용하여 번들링 후 발생하는 **파일 경로 문제를 완벽하게 해결**했습니다.
+[**miniaudio**](https://miniaud.io) 라이브러리를 기반으로 하며, `sys.load_resource`를 활용한 **메모리 기반 재생 방식**을 사용하여 번들링 후 발생하는 **파일 경로 문제를 해결**했습니다.
 
 ***
 
 ## 주요 기능 (Key Features)
 
-- **완벽한 번들링 지원**:
-파일 시스템 경로에 의존하지 않고 **메모리에서 직접 재생**되므로 Android, iOS, HTML5 등 **모든 플랫폼에서 안정적으로 작동**합니다.
+- **번들링 지원**:
+파일 시스템 경로에 의존하지 않고 **메모리에서 직접 재생**되므로 Android, iOS, HTML5 등 **모든 플랫폼에서 최대한 안정적으로 작동**합니다.
 - **고음질 오디오 지원**:
 16-bit, 24-bit, 32-bit Float 포맷의 **고해상도 오디오 파일** 지원.
 - **고급 제어 기능**:
