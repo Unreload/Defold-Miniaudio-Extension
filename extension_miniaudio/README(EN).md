@@ -4,14 +4,14 @@
 
 
 **Defold Miniaudio Extension** is a high-performance audio solution for the Defold engine.
-It is built on top of the [**miniaudio**](https://miniaud.io) library and adopts a **memory-based streaming approach using `sys.load_resource`**, which completely resolves file path issues that often occur after bundling.
+It is built on top of the [**miniaudio**](https://miniaud.io) library and adopts a **memory-based streaming approach using `sys.load_resource`**, which resolves file path issues that often occur after bundling.
 
 ***
 
 ## Key Features
 
-- **Full Bundling Support**
-Loads and plays audio files directly from memory instead of relying on file paths. Works reliably on **Android, iOS, and HTML5**.
+- **Bundling Support**
+Loads and plays audio files directly from memory instead of relying on file paths. Works on **Android, iOS, and HTML5**.
 - **High-Resolution Audio**
 Supports **16-bit**, **24-bit**, and **32-bit Float** formats for superior sound quality.
 - **Advanced Controls**
