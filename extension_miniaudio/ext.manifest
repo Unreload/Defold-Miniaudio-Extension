@@ -1,0 +1,6 @@
+name: "MiniAudioExt"
+
+platforms:
+    common:
+        context:
+            defines: ["MINIAUDIO_IMPLEMENTATION"]
