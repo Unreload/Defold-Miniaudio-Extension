@@ -52,7 +52,7 @@ static float g_sfx_volume = 1.0f;
 // ------------------------------------
 // 유틸리티 함수
 // ------------------------------------
-float clamp(float v, float min, float max) {
+static float clamp(float v, float min, float max) {
 	if (v < min) return min;
 	if (v > max) return max;
 	return v;
@@ -240,7 +240,7 @@ static int SetSFXVolume(lua_State* L) {
 // ------------------------------------
 // 4. Update 루프 (페이드 처리를 위해 필요)
 // ------------------------------------
-dmExtension::Result Update(dmExtension::Params* params) {
+static dmExtension::Result Update(dmExtension::Params* params) {
 	if (bgm_track.is_loaded && bgm_track.is_fading) {
 		// 간단한 dt 계산 (Defold는 기본적으로 60fps 근처)
 		float dt = 1.0f / 60.0f; 
@@ -282,11 +282,11 @@ static void LuaInit(lua_State* L) {
 	lua_pop(L, 1);
 }
 
-dmExtension::Result AppInitialize(dmExtension::AppParams* params) { return dmExtension::RESULT_OK; }
-dmExtension::Result Initialize(dmExtension::Params* params) { LuaInit(params->m_L); return dmExtension::RESULT_OK; }
-dmExtension::Result AppFinalize(dmExtension::AppParams* params) { return dmExtension::RESULT_OK; }
+static dmExtension::Result AppInitialize(dmExtension::AppParams* params) { return dmExtension::RESULT_OK; }
+static dmExtension::Result Initialize(dmExtension::Params* params) { LuaInit(params->m_L); return dmExtension::RESULT_OK; }
+static dmExtension::Result AppFinalize(dmExtension::AppParams* params) { return dmExtension::RESULT_OK; }
 
-dmExtension::Result Finalize(dmExtension::Params* params) {
+static dmExtension::Result Finalize(dmExtension::Params* params) {
 	if (bgm_track.is_loaded) {
 		ma_sound_uninit(&bgm_track.sound);
 		ma_decoder_uninit(&bgm_track.decoder);
